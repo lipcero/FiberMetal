@@ -13,7 +13,6 @@ body {
     flex-direction: column;
 }
 header {
-    background-color: rgb(44, 61, 78);
     width: 100%;
     position:fixed;
     top: 0;
