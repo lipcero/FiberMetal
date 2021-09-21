@@ -5,12 +5,15 @@
     font-family: 'Libre Baskerville';
 }
 body {
-    background-color: rgb(149, 248, 255);
+    background-color: rgb(102, 169, 173);
     padding: 90px 0px 0px;
     min-height: 100vh;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 header {
-    background-color: rgb(76, 86, 97);
+    background-color: rgb(44, 61, 78);
     width: 100%;
     position:fixed;
     top: 0;
@@ -200,40 +203,50 @@ header.sticky .menu-item .sub-menu {
     }
 }
 
+main {
+    flex: 1 0 auto;
+}
 
 h1 { 
     font-size: 40px;
     font-family: 'Dancing Script' ,cursive;
     margin-bottom: 0px;
 }
+
 #linea1 {
     border-color: black;
     border-width: 2px 0px 0px 0px;
     margin: 20px 0px 15px;
 }
+
 img {
     border-radius:5px;
 }
+
 #linea2 {
     border-color: black;
     border-width: 2px 0px 0px 0px;
     margin: 15px 0px 20px;
 }
+
 h2 {
     margin: 0;
     font-family: 'Dancing Script' ,cursive;
     font-size: 40px;
     text-align: center;
 }
+
 #info{
     text-align: center;
 }
+
 .mapa {
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
 }
+
 .mapa iframe {
     left:0;
     top:0;
@@ -241,11 +254,9 @@ h2 {
     width:100%;
     position:absolute;
 }
-/* footer {
+
+footer {
     margin-top: 20px;
     width: 100%;
-    text-align: center;
-    padding:20px 10px;
-    background-color: gray;
-    color: rgb(0, 0, 0);
-} */
+
+}
