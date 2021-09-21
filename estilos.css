@@ -138,11 +138,7 @@ header.sticky .menu-item .sub-menu {
     header .nav .menu.active {
         right: 0;
         visibility: visible;
-        padding:70px 10% 70px 13%;
-    }
-
-    .menu-item {
-        position: relative;
+        padding:70px 37px 70px 37px;
     }
 
     .menu-item .sub-menu {
