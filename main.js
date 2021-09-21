@@ -25,6 +25,14 @@ window.addEventListener("scroll", function(){
 // carrusel
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems);
+    var instances = M.Carousel.init(elems,{
+        indicators:true,
+        shift:30,
+        numvisible: 4,
+        duration:400,
+    });
   });
-
+    //   autoplay carrusel
+    setInterval(function(){
+        $('.carousel').carousel('next');
+    },4000);
