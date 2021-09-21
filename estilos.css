@@ -5,7 +5,7 @@
     font-family: 'Libre Baskerville';
 }
 body {
-    background-color: rgb(102, 169, 173);
+    background-color: #ffffff;
     padding: 90px 0px 0px;
     min-height: 100vh;
     display: flex;
@@ -57,11 +57,12 @@ header .nav .menu {
     font-size: 20px;
     text-decoration: none;
     margin: 0px;
-    padding: 29px 10px;
+    padding: 29px 12px;
     cursor: pointer;
+    line-height: 70px;
 }
 #icono-dwn {
-    font-size: 20px;
+    font-size: 15px;
 
 }
 .menu-item >a:hover {
@@ -69,14 +70,13 @@ header .nav .menu {
     transition: 0.6s;
 }
 
-
     /* SUBMENU CONTACTO */
 
 .menu-item .sub-menu {
     position: fixed;
     background-color: lightslategray;
     top: 80px;
-    line-height: 50px;
+    line-height: 40px;
     list-style: none;
     border-radius: 5px 5px 10px 10px;
     box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
@@ -87,7 +87,7 @@ header .nav .menu {
     transition-property: transform, opacity;
 }
 header.sticky .menu-item .sub-menu {
-    top: 92px;
+    top: 90px;
 }
 
 .menu-item:hover .sub-menu {
@@ -138,6 +138,7 @@ header.sticky .menu-item .sub-menu {
     header .nav .menu.active {
         right: 0;
         visibility: visible;
+        padding:70px 10% 70px 13%;
     }
 
     .menu-item {

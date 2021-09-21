@@ -32,6 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
     //   autoplay carrusel
-    setInterval(function(){
-        $('.carousel').carousel('next');
-    },4000);
+    // setInterval(function(){
+    //     $('.carousel').carousel('next');
+    // },4000);
