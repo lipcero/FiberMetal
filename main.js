@@ -26,7 +26,6 @@ window.addEventListener("scroll", function(){
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems,{
-        indicators:false,
         numVisible: 3,
         duration:400,
         
