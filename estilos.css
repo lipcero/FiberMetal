@@ -57,7 +57,7 @@ header .nav .menu {
     font-size: 20px;
     text-decoration: none;
     margin: 0px;
-    padding: 55px 10px;
+    padding: 29px 10px;
     cursor: pointer;
 }
 #icono-dwn {
@@ -106,7 +106,7 @@ header.sticky .menu-item .sub-menu {
     color: white;
     font-size: 15px;
     text-decoration: none;
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 .menu-item .sub-menu .sub-item:hover{
     background-color: rgb(103, 184, 231);
@@ -206,12 +206,30 @@ header.sticky .menu-item .sub-menu {
 main {
     flex: 1 0 auto;
 }
+.ancla:before {
+    display: block;
+    content: " ";
+    margin-top: -110px;
+    height: 110px;
+    visibility: hidden;
+}
+.carousel{
+    height: 450px;
+}
 
+.carousel .carousel-item {
+    width: 245px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+}
 
 h1 { 
-    font-size: 40px;
+    margin-top: 10px;
+    font-size: 45px;
     font-family: 'Dancing Script' ,cursive;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #linea1 {
@@ -233,25 +251,27 @@ img {
 h2 {
     margin: 0;
     font-family: 'Dancing Script' ,cursive;
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
 }
 
 #info{
     text-align: center;
+    margin-top: 5px;
 }
 
 .mapa {
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
-    height:0;
+    height: 0px;
+    margin-top: 20px;
 }
 
 .mapa iframe {
     left:0;
     top:0;
-    height:100%;
+    height: 100%;
     width:100%;
     position:absolute;
 }
