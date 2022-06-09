@@ -5,7 +5,7 @@
     font-family: 'Libre Baskerville';
 }
 body {
-    background-image: url("imagenes/background.png");
+    background-image: url("./imagenes/background.png");
     background-color: ghostwhite;
     padding: 90px 0px 0px;
     min-height: 100vh;
@@ -217,9 +217,14 @@ main {
 }
 .carousel{
     width: 100%;
+    margin-bottom: 0px;
     height: 450px;
 }
 
+.carousel .carousel-item {
+    height: 400px;
+    width: 300px;
+}
 
 
 
