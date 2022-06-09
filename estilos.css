@@ -137,7 +137,7 @@ header.sticky .menu-item .sub-menu {
         transition-property: right, visibility;
     }
     header.sticky .nav {
-        line-height: 60px;
+        line-height: 80px;
     }
 
     header .nav .menu.active {
