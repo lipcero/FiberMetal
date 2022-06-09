@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if( $(this).scrollTop() > 0 ){
                 $('#ir-arriba').slideDown(300);
             } else {
-                $('#ir-arriba').slideUp(600);
+                $('#ir-arriba').slideUp(300);
             }
         });
     
