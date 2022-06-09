@@ -5,6 +5,7 @@
     font-family: 'Libre Baskerville';
 }
 body {
+    background-image: url("imagenes/background.png");
     background-color: ghostwhite;
     padding: 90px 0px 0px;
     min-height: 100vh;
@@ -13,6 +14,9 @@ body {
     flex-direction: column;
 }
 header {
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.92);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.92);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.92);
     width: 100%;
     position:fixed;
     top: 0;
@@ -22,7 +26,7 @@ header {
     padding: 0 50px;
     transition: 0.6s;
     display: flex;
-    line-height: 80px;
+    line-height: 70px;
     z-index: 1;
 }
 header .logo{
@@ -35,13 +39,14 @@ header .logo{
 }
 header .nav {
     position: relative;
-    line-height: 70px;
+    line-height: 80px;
     transition: 0.6s;
     transition-property: line-height;
 }
 
 header.sticky .nav {
     line-height: 90px;
+    
 }
 
 header .nav .menu {
@@ -50,30 +55,28 @@ header .nav .menu {
     justify-content: center;
     list-style: none;
     user-select: none;
+    cursor: pointer;
 }
 .menu-item > a {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
-    margin: 0px;
-    padding: 29px 12px;
+    margin: 0px 0px;
+    padding: 0px 10px;
     cursor: pointer;
-    line-height: 70px;
+    line-height: 60px;
 }
-#icono-dwn {
-    font-size: 15px;
 
-}
-.menu-item >a:hover {
-    color: rgb(108, 199, 202);
-    transition: 0.6s;
+.menu-item > a:hover {
+    color: rgb(103, 184, 231);
+    transition: 0.4s;
 }
 
     /* SUBMENU CONTACTO */
 
 .menu-item .sub-menu {
     position: fixed;
-    background-color: lightslategray;
+    background-color: #263238;
     top: 80px;
     line-height: 40px;
     list-style: none;
@@ -84,6 +87,9 @@ header .nav .menu {
     opacity: 0;
     transition: 0.3s;
     transition-property: transform, opacity;
+    -webkit-box-shadow: 0px 5px 16px -4px rgba(0,0,0,0.92);
+    -moz-box-shadow: 0px 5px 16px -4px rgba(0,0,0,0.92);
+    box-shadow: 0px 5px 16px -4px rgba(0,0,0,0.92);    
 }
 header.sticky .menu-item .sub-menu {
     top: 90px;
@@ -96,7 +102,7 @@ header.sticky .menu-item .sub-menu {
 }
 .menu-item .sub-menu .sub-item {
     position: relative;
-    padding: 10px 15px;
+    padding: 10px 22px;
     cursor: pointer;
     box-shadow: inset 0px -30px 5px -30px rgba(12, 12, 12, 0.2);
     border-radius: 5px 5px;
@@ -131,7 +137,7 @@ header.sticky .menu-item .sub-menu {
         transition-property: right, visibility;
     }
     header.sticky .nav {
-        line-height: 70px;
+        line-height: 60px;
     }
 
     header .nav .menu.active {
@@ -211,19 +217,11 @@ main {
 }
 .carousel{
     width: 100%;
-    margin-top: 0px;
     height: 450px;
 }
 
-.carousel .carousel-item {
-    width: 40%;
-    height: 70%;
-}
 
-.carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-}
+
 
 h1 { 
     margin-top: 15px;
@@ -278,4 +276,15 @@ footer {
     margin-top: 20px;
     width: 100%;
 
+}
+#ir-arriba {
+	display:none;
+	padding:10px 15px 10px 15px;
+	background:#024959;
+	font-size:10px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }

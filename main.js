@@ -25,13 +25,32 @@ window.addEventListener("scroll", function(){
 // carrusel
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems,{
-        numVisible: 3,
-        duration:400,
-        
+    var instances = M.Carousel.init(elems, {
+        dist: -150,
     });
   });
+
+
     //   autoplay carrusel
     setInterval(function(){
         $('.carousel').carousel('next');
-    },4000);
+    },3000);
+
+    // boton ir arriba flotante
+    $(document).ready(function(){
+
+        $('#ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+    
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('#ir-arriba').slideDown(300);
+            } else {
+                $('#ir-arriba').slideUp(600);
+            }
+        });
+    
+    });
