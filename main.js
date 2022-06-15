@@ -3,14 +3,30 @@ var menu = document.querySelector(".menu");
 var menuBtn = document.querySelector(".menu-btn");
 var closeBtn = document.querySelector(".close-btn");
 var overlayNav = document.querySelector(".nav-overlay");
+var liclick = document.querySelector(".liclick");
+var liclick1 = document.querySelector(".liclick1");
+var aclick = document.querySelector(".aclick");
+
 
 menuBtn.addEventListener("click", () => {
     menu.classList.add("active");
 });
 
+aclick.addEventListener("click", () => {
+    menu.classList.remove("active");
+});
+
+liclick.addEventListener("click", () => {
+    menu.classList.remove("active");
+});
+liclick1.addEventListener("click", () => {
+    menu.classList.remove("active");
+});
+
 closeBtn.addEventListener("click", () => {
     menu.classList.remove("active");
 });
+
 overlayNav.addEventListener("click", () => {
     menu.classList.remove("active");
 });
